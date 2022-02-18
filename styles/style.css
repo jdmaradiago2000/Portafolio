@@ -1,0 +1,313 @@
+:root{  
+    --main-color: #1F1D2C;
+    --accent-color:#F1A600;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: var(--main-color);
+    color: #ffffff;
+    font-family: 'Inter', sans-serif;
+    background-image: url("../Vectores/Rectangle 34.svg");
+    background-repeat: no-repeat;
+    background-position: right top;
+    font-size: 16px;
+}
+
+/*Menú Hamburguesa*/
+nav{
+    width: 100%;
+    display: flex;
+    justify-content:flex-end;
+    align-items: center;
+    padding: 0.5rem 1.25rem;
+    background-color: transparent;
+}
+
+nav>div img{
+    width: 1.5rem;
+}
+input#menu-hamburguesa{
+    visibility: hidden;
+}
+input#menu-hamburguesa~ul{
+    width: 100%;
+    list-style: none;
+    height: 100%;
+    position: absolute;
+    right: 100%;
+    transition: all 200ms linear;
+    z-index: 10;
+}
+input#menu-hamburguesa:checked~ul{
+    right: 0;
+}
+
+/*Primera sección llamada "about-section"*/
+#about-section{
+    margin-top: 70px;
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 330px;
+    padding: 1.25rem;
+}
+#about-section>div:first-of-type{
+    position: absolute;
+    left: 0;
+    padding: 0 1.25rem;
+}
+#about-section h1{
+    font-size: 32px;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+#about-section h1+p{
+    font-size: 18px;
+    margin-bottom: 1rem;
+}
+#about-section p>span{
+    color: var(--accent-color);
+}
+.social-icon-wrapper{
+    margin-top: 1rem;
+}
+.social-icon-wrapper>.icon{
+    margin-right: 1rem;
+    width: 24px;
+}
+#foto-perfil{
+    width: 200px;
+    height: 230px;
+}
+
+/*Segunda sección llamada "personal-info-section"*/
+#personal-info-section{
+    background-image: url("../Vectores/Rectangle 33.svg");
+    text-align: center;
+    padding: 1.5rem;
+}
+#personal-info-section>h2{
+    text-align:center;
+    margin: 0.3rem;
+    font-size: 32px;
+    font-weight: bold;
+}
+.academic-wrapper{
+    display: flex;
+    justify-content: space-around;
+    padding: 1rem 0;
+}
+
+/*Tercera sección llamada "experiencia"*/
+#experiencia{
+    margin-bottom: 1rem;
+}
+#experiencia>h2{
+    text-align:center;
+    margin: 0.7rem;
+    font-size: 32px;
+    font-weight: bold;
+}
+#experiencia>div{
+    display: flex;
+    justify-content: space-evenly;
+}
+#experiencia>div>div:first-child{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 0.7rem;
+}
+#experiencia>div>div:first-child+div{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 0.7rem;
+}
+#experiencia>div>div:first-child+div{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 0.7rem;
+}
+#experiencia>div>div:first-child+div{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 0.7rem;
+}
+.años{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 0.6rem;
+}
+.barra{
+    margin: 0.6rem;
+}
+
+/*Cuarta sección llamada "Mis habilidades"*/
+#habilidades{
+    margin-bottom: 1rem;
+    background-image: url("../Vectores/Rectangle\ 34-1.svg");
+    background-repeat: no-repeat;
+    background-position: left top;
+}
+#habilidades>h2{
+    text-align:center;
+    margin: 0.7rem;
+}
+#habilidades>div{   
+    display: flex;
+    justify-content: space-evenly;
+}
+.porcentaje{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: right;
+    margin: 0.7rem;
+    color: var(--accent-color);
+    font-size: 32px;
+    font-weight: bold;
+}
+.porcentaje>p{
+    margin: 1rem 0rem;
+}
+.nombres-trabajos{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 0.7rem;
+}
+.nombres-trabajos>p{
+    margin: 1rem 0rem;
+}
+
+/*Quinta sección llamada "mi-portafolio"*/
+#mi-portafolio{
+    margin-bottom: 1rem;
+}
+#mi-portafolio>h2{
+    text-align: center;
+    margin: 0.7rem;
+    font-size: 32px;
+    font-weight: bold;
+}
+.imagenes-grid{
+    display: grid;
+    grid-template-columns: (3, 1fr);
+    grid-template-rows: (3, 1fr);
+}
+.imagenes-grid>div{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+}
+.ecommerce{
+    right: 40px;
+    margin: 1rem;
+}
+.training-home{
+    left: 16px;
+    margin: 1rem;
+}
+.personal-writer{
+    right: 40px;
+    margin: 1rem;
+}
+.tamaño{
+    width: 250px;
+}
+
+/*Sexta sección llamada "mis-datos"*/
+#mis-datos{
+    margin-bottom: 1rem;
+    background-image: url("../Vectores/Rectangle\ 33-1.svg");
+}
+#mis-datos>h2{
+    text-align: center;
+    margin: 0.7rem;
+    font-size: 32px;
+    font-weight: bold;
+    padding-top: 1rem;
+}
+#mis-datos>div{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    padding: 1.5rem 0rem;
+}
+#mis-datos>div>div>*{
+    padding: 0.125rem;
+}
+.icono-contacto{
+    width: 48px;
+}
+.dato-contacto{
+    font-size: 14px;
+}
+
+/*Septima sección llamada "hecho-por"*/
+footer{
+    display: flex;
+    justify-content:flex-end;
+    padding: 1.5rem 0rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 2rem;
+}
+footer>div{
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (min-width:768px){
+    label{
+        display: none;
+        }
+    input#menu-hamburguesa~ul{
+        position: static;
+        background-color: transparent;
+        display: flex;
+    }
+    input#menu-hamburguesa~ul>li{
+        padding: 0px 1rem;
+    }
+    #habilidades{
+        margin-bottom: 1rem;
+        background-image: url("../Vectores/Rectangle\ 34-1.svg");
+        background-repeat: no-repeat;
+        background-position: left top;
+    }
+
+}
+
