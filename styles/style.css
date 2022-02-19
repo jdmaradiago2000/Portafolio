@@ -42,6 +42,9 @@ input#menu-hamburguesa~ul{
     transition: all 200ms linear;
     z-index: 10;
 }
+input#menu-hamburguesa~ul>li>a{
+    color: white;
+}
 input#menu-hamburguesa:checked~ul{
     right: 0;
 }
@@ -76,8 +79,8 @@ input#menu-hamburguesa:checked~ul{
 .social-icon-wrapper{
     margin-top: 1rem;
 }
-.social-icon-wrapper>.icon{
-    margin-right: 1rem;
+.icon{
+    margin-right: 0.5rem;
     width: 24px;
 }
 #foto-perfil{
@@ -85,7 +88,7 @@ input#menu-hamburguesa:checked~ul{
     height: 230px;
 }
 
-/*Segunda sección llamada "personal-info-section"*/
+/*Segunda sección llamada "Acerca de mí"*/
 #personal-info-section{
     background-image: url("../Vectores/Rectangle 33.svg");
     text-align: center;
@@ -155,8 +158,8 @@ input#menu-hamburguesa:checked~ul{
 #habilidades{
     margin-bottom: 1rem;
     background-image: url("../Vectores/Rectangle\ 34-1.svg");
-    background-repeat: no-repeat;
     background-position: left top;
+
 }
 #habilidades>h2{
     text-align:center;
@@ -189,7 +192,7 @@ input#menu-hamburguesa:checked~ul{
     margin: 1rem 0rem;
 }
 
-/*Quinta sección llamada "mi-portafolio"*/
+/*Quinta sección llamada "Mi-portafolio"*/
 #mi-portafolio{
     margin-bottom: 1rem;
 }
@@ -222,6 +225,7 @@ input#menu-hamburguesa:checked~ul{
     right: 40px;
     margin: 1rem;
 }
+
 .tamaño{
     width: 250px;
 }
@@ -257,40 +261,21 @@ input#menu-hamburguesa:checked~ul{
 
 /*Septima sección llamada "hecho-por"*/
 footer{
-    display: flex;
-    justify-content:flex-end;
-    padding: 1.5rem 0rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-bottom: 2rem;
+  display: flex;
+  justify-content: center;
+  text-align: center;
 }
-footer>div{
-    
+.nombre{
+    margin:2rem 1rem;
+}
+footer>div>a>img{
+    width: 50px;
+    margin: 1rem 1rem;
 }
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-@media only screen and (min-width:768px){
+@media only screen and (min-width:968px){
     label{
         display: none;
         }
@@ -305,9 +290,17 @@ footer>div{
     #habilidades{
         margin-bottom: 1rem;
         background-image: url("../Vectores/Rectangle\ 34-1.svg");
-        background-repeat: no-repeat;
         background-position: left top;
     }
-
 }
+
+
+
+
+
+
+
+
+
+
 
