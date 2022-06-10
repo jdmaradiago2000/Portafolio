@@ -157,17 +157,19 @@ input#menu-hamburguesa:checked~ul{
 /*Cuarta sección llamada "Mis habilidades"*/
 #habilidades{
     margin-bottom: 1rem;
-    background-image: url("../Vectores/Rectangle\ 34-1.svg");
     background-position: left top;
-
 }
 #habilidades>h2{
     text-align:center;
     margin: 0.7rem;
+    padding: 15px;
 }
 #habilidades>div{   
     display: flex;
     justify-content: space-evenly;
+}
+.tech{
+    padding: 5px;
 }
 .porcentaje{
     display: flex;
@@ -196,26 +198,18 @@ input#menu-hamburguesa:checked~ul{
 #mi-portafolio{
     margin-bottom: 1rem;
 }
-#mi-portafolio>h2{
+.portfolio{
     text-align: center;
     margin: 0.7rem;
     font-size: 32px;
     font-weight: bold;
+    padding: 15px 0px;
 }
 .imagenes-grid{
-    display: grid;
-    grid-template-columns: (3, 1fr);
-    grid-template-rows: (3, 1fr);
-}
-.imagenes-grid>div{
     display: flex;
-    position: relative;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
-}
-.ecommerce{
-    right: 40px;
-    margin: 1rem;
+    flex-wrap: wrap;
 }
 .training-home{
     left: 16px;
@@ -254,6 +248,7 @@ input#menu-hamburguesa:checked~ul{
 }
 .icono-contacto{
     width: 48px;
+    background-color: var(--accent-color);
 }
 .dato-contacto{
     font-size: 14px;
