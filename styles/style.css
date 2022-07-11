@@ -54,6 +54,7 @@ input#menu-hamburguesa:checked~ul{
     margin-top: 70px;
     position: relative;
     display: flex;
+    text-align: justify;
     justify-content: flex-end;
     align-items: center;
     height: 330px;
